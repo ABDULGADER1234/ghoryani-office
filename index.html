@@ -62,37 +62,8 @@
       top: 10px;
       left: 10px;
     }
-    .whatsapp-button {
-      display: block;
-      margin: 20px auto;
-      width: fit-content;
-      padding: 10px 20px;
-      background-color: #25D366;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    form button {
-      background-color: gold;
-      color: black;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
+    .article, .image, .video {
+      margin-top: 30px;
     }
     @media (max-width: 768px) {
       nav {
@@ -131,6 +102,7 @@
   <nav>
     <a href="#about">درباره ما / About</a>
     <a href="#services">خدمات / Services</a>
+    <a href="#media">مطالب / Media</a>
     <a href="#contact">تماس با ما / Contact</a>
   </nav>
 
@@ -162,6 +134,33 @@
     </ul>
   </section>
 
+  <section id="media">
+    <h2 data-lang="fa">مطالب و رسانه‌ها</h2>
+    <h2 data-lang="en" style="display:none">Articles & Media</h2>
+
+    <div class="article">
+      <h3 data-lang="fa">📝 مقاله</h3>
+      <h3 data-lang="en" style="display:none">📝 Article</h3>
+      <p data-lang="fa">در اینجا مقاله خود را وارد کنید...</p>
+      <p data-lang="en" style="display:none">Write your article here...</p>
+    </div>
+
+    <div class="image">
+      <h3 data-lang="fa">🖼️ عکس</h3>
+      <h3 data-lang="en" style="display:none">🖼️ Image</h3>
+      <img src="your-image.jpg" alt="تصویر شما" style="max-width:100%; border: 2px solid gold;">
+    </div>
+
+    <div class="video">
+      <h3 data-lang="fa">🎥 ویدیو</h3>
+      <h3 data-lang="en" style="display:none">🎥 Video</h3>
+      <video controls width="100%">
+        <source src="your-video.mp4" type="video/mp4">
+        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+      </video>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <h2 data-lang="fa">تماس با ما</h2>
     <h2 data-lang="en" style="display:none">Contact Us</h2>
@@ -170,23 +169,11 @@
     <p>موبایل / WhatsApp: 0798324110</p>
     <p>تلگرام / Telegram: 0708641733</p>
     <p>Email: aminq7162@gmail.com</p>
-
-    <a class="whatsapp-button" href="https://wa.me/93798324110" target="_blank">ارسال پیام واتساپ</a>
-
-    <form>
-      <input type="text" placeholder="نام شما" required>
-      <input type="email" placeholder="ایمیل شما" required>
-      <textarea rows="4" placeholder="پیام شما" required></textarea>
-      <button type="submit">ارسال</button>
-    </form>
-
-    <iframe src="https://maps.google.com/maps?q=Herat%20Afghanistan&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
   </section>
 
   <footer>
-    <p data-lang="fa">© 2025 دفتر خدمات مالیاتی عبدالقدیر غوریانی. تمامی حقوق محفوظ است.</p>
-    <p data-lang="en" style="display:none">© 2025 Abdulqader Ghoryani Tax Services Office. All rights reserved.</p>
+    <p data-lang="fa">&copy; 2025 دفتر خدمات مالیاتی عبدالقدیر غوریانی. تمامی حقوق محفوظ است.</p>
+    <p data-lang="en" style="display:none">&copy; 2025 Abdulqader Ghoryani Tax Services Office. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
